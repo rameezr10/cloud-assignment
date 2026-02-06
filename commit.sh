@@ -12,6 +12,6 @@ fi
 
 git add .
 git commit -m "$1"
-git push
+git push -u origin $(git branch --show-current)
 
 echo "Success: Changes have been staged, committed, and pushed."
